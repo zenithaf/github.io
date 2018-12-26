@@ -99,7 +99,7 @@ HERO
     align-items: center;
     justify-content: center;
 
-    background-image: url('lily3.jpg'); 
+    background-image: url("lily3.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
 

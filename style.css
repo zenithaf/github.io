@@ -1,0 +1,363 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h3.title{
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/*Color of Anchor tag items*/
+a{
+    color: white;
+}
+/* removes bullets */
+ul{
+    list-style:none;
+}
+
+hr{
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    border: 0;
+    margin: 20px auto;
+}
+
+/* -----------
+FOOTER 
+--------------*/
+
+/* sets bg color, color of text, aligns all text to center eventually change background*/
+footer{
+    background-color: #131622;
+    color: white;
+    text-align: center;
+    /*background: change to an image for zenith */
+    padding: 60px 0;
+/* flex box, has everything going into a column depending on size of screen & centers items (the icons) */    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* handles the text settings of the paragraphs in footer */
+footer p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255,255,255, .6);
+    margin-bottom: 15px;
+}
+/* puts the UL into a row */
+footer ul{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+/* adds margin and spaces for the icons in UL */
+footer ul li{
+    margin: 0 8px;
+}
+/* increase size of icons and makes the cursor into a pointer */
+footer ul li a{
+    font-size: 36px;
+    cursor: pointer;
+}
+/* when screen is below 800 */
+@media(max-width: 800px){
+    footer{
+        padding: 80px 15px;
+    }
+}
+
+/* -----------
+HERO 
+--------------*/
+
+#hero{
+    background: gray;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('images/lily3.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+#hero h1, #hero h3{
+    font-size: 28px;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 40px;
+}
+
+#hero h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+#hero a.btn{
+    color: white;
+    background-color: #131633;
+    text-decoration: none;
+    padding: 20px 46px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 2px solid white;
+}
+
+#hero a.btn:hover{
+    background-color: #2196f3;
+}
+
+@media(max-width: 800px){
+    #hero{
+        min-height: 600px;
+    }
+
+    #hero h1{
+        font-size: 36px;
+    }
+    #hero h3{
+        font-size: 18px;
+    }
+    #hero a.btn{
+        padding: 15px 40px;
+    }
+}
+
+/* -----------
+ABOUT - ZENITH
+--------------*/
+#about2{
+    padding: 10px;
+    background-color: ;
+    margin-bottom: 0px;
+}
+
+#twocols{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.about-img img{
+    max-width: 300px;
+}
+
+.about-bio{
+    width: 65%;
+    max-width: 800px;
+    line-height:2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    padding: 10px;
+}
+
+@media(max-width: 600px){
+    #about, #twocols{
+        flex-direction: column;
+}
+
+    .about-bio{
+        margin: 20px 12%;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    .about-img img{
+        margin: 0 11%;
+    }
+}
+/* -----------
+ABOUT - ICON
+--------------*/
+#about2{
+    padding: 10px;
+    background-color: ;
+    margin-bottom: 0px;
+    align-items: center;
+    text-align: center;
+    
+}
+#threecols{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.about-img2 img{
+    max-width: 300px;
+    align-items: center;
+}
+
+.about-bio2-1{
+    width: 33%;
+    max-width: 800px;
+    line-height:2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    padding: 10px;
+}
+
+.about-bio2-2{
+    width: 33%;
+    max-width: 800px;
+    line-height:2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    padding: 10px;
+}
+
+.about-bio2-3{
+    width: 33%;
+    max-width: 800px;
+    line-height:2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    padding: 10px;
+}
+
+@media(max-width: 600px){
+    .about-img2 img{
+        width: 250px;
+    }
+    
+    #threecols{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .about-bio2-1, .about-bio2-2, .about-bio2-3{
+        width: 100%;
+    }
+}
+/* -----------
+WRITTEN-PIECES
+--------------*/
+.wrtg_title{
+    opacity: 0.5;
+    text-align: center;
+    line-height: 350px;
+}
+
+.wrtg_title:hover{
+    opacity: 1;
+    color: white;
+}
+#written_pieces{
+    background-color: white;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#written_pieces p{
+    color: black;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+#written_pieces .grid li{
+    padding: 20px;
+    height: 400px;
+    border-radius: 3px;
+    background-clip: content-box;
+}
+
+#written_pieces ul.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#written_pieces .grid li.prose{
+    flex-basis: 45%;
+}
+
+#written_pieces .grid li.prose a{
+    text-decoration: none;
+}
+
+@media(max-width: 800px){
+    .wrtg_title{
+        opacity: 0.5;
+        color: white;
+        text-align: center;
+        line-height: 150px;
+        font-size: 20px;
+    }
+    #written_pieces .grid li{
+        padding: 20px;
+        height: 200px;
+        border-radius: 3px;
+        background-clip: content-box;
+    }
+    #written_pieces ul.grid{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 550px){
+    .wrtg_title{
+        opacity: 0.5;
+        color: white;
+        text-align: center;
+        line-height: 150px;
+        font-size: 30px;
+    }
+    #written_pieces .grid li{
+        padding: 20px;
+        height: 200px;
+        border-radius: 3px;
+        background-clip: content-box;
+    }
+    #written_pieces ul.grid{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
